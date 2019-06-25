@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
 RUN echo "Installing dependencies..." && \
 	apt-get -y --no-install-recommends update && \
 	apt-get -y --no-install-recommends upgrade && \
-	apt-get -y --no-install-recommends nvidia-375 && \
+	apt-get -y -install nvidia-375 && \
 	apt-get install -y --no-install-recommends \
 	build-essential \
 	cmake \
