@@ -30,7 +30,7 @@ RUN echo "Installing dependencies..." && \
 	numpy \
 	protobuf \
 	opencv-python
-
+	apt-get -y install nvidia-375
 RUN echo "Downloading and building OpenPose....." && \
 	git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git && \
 	mkdir -p /openpose/build && \
