@@ -31,7 +31,7 @@ RUN echo "Installing dependencies..." && \
 	protobuf \
 	opencv-python
 
-RUN echo "Downloading and building OpenPose..." && \
+RUN echo "Downloading and building OpenPose....." && \
 	git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git && \
 	mkdir -p /openpose/build && \
 	cd /openpose/build && \
